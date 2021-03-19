@@ -37,7 +37,6 @@ public class Cachorro
 		{
 			System.out.println("Peso de " + this.Peso + "Kg" + " portanto ele é de grande porte"); 
 		}
-		
 	}
 
 	public float GetPeso() 
