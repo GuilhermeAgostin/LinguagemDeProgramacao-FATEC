@@ -56,7 +56,6 @@ public class Cachorro
 
 	public void SetIdade(int Idade) 
 	{
-
 		System.out.println("O cachorro tem " + (this.Idade = Idade) + " anos");
 	}
 

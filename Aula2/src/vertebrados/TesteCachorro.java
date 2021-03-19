@@ -6,17 +6,16 @@ public class TesteCachorro
 {
 	public static void main(String[] args) 
 	{
-		@SuppressWarnings("resource") // se eu tirar ele fica aparecendo um alerta no lerTec, pois ele acha que abre o recurso e não fecha, ele suprime o warnig
+		@SuppressWarnings("resource") 
 		
-		Scanner lerTec = new Scanner(System.in); // classe scanner serve para ler dados via console, via teclado
-											   // system.in seria a entrada padrao do teclado
+		Scanner lerTec = new Scanner(System.in); 
         
 		int fim =0; 
 		
 		do 
 		{
 			System.out.println("\nDigite a raça e a cor do cachorro");
-			String r = lerTec.next(); // aqui eu pego a string digitada pelo usuario
+			String r = lerTec.next(); 
 
 			Cachorro Dog1 = new Cachorro(r,lerTec.next(),'M');
 			System.out.println("Qual a idade dele?");
@@ -53,7 +52,7 @@ public class TesteCachorro
 			JOptionPane.showMessageDialog(null, Dog3.GetIdade(), "Idade do Cachorro",1);
 
 			System.out.println("\nVocê quer continuarl? 1-não 0-sim ");
-			fim = lerTec.nextInt(); // next seria para pegar os dados do teclado, se nao especificar ele entende que o tipo é string
+			fim = lerTec.nextInt();
 
 	    } while (fim==0);
 
